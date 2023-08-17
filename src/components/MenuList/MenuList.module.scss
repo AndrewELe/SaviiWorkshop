@@ -1,0 +1,13 @@
+.MenuList {
+    background-color: var(--tan-4);
+    border: .4vmin solid rgb(101, 192, 253);
+    border-radius: 5vmin;
+    margin: 3vmin 0;
+    padding: 3vmin;
+    overflow-y: auto;
+    box-shadow: 0 0 25px 15px rgb(4, 154, 255);
+    }
+
+    .MenuList::-webkit-scrollbar {
+        width: 1vmin;
+    }

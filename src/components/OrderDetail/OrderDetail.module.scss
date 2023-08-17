@@ -1,0 +1,62 @@
+.OrderDetail {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3vmin;
+    border-radius: 8vmin;
+    font-size: 2vmin;
+    color: var(--text-light);
+  }
+  
+.OrderDetail .lineItemContainer .diagram {
+  opacity: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+  .OrderDetail .sectionHeading {
+    font-size: 3vmin;
+    width: 100%;
+    text-align: center;
+    color: var(--tan-4);
+    text-shadow: 1px 1px 20px rgba(101, 192, 253), 1px 1px rgba(101, 192, 253);
+  }
+  
+  .OrderDetail .lineItemContainer {
+    border-radius: 3vmin;
+    margin-top: 3vmin;
+    border: 0.4vmin solid rgb(101, 192, 253);
+    box-shadow: 0 0 25px 15px rgb(4, 154, 255);
+    justify-content: flex-start;
+    height: calc(100vh - 18vmin);
+    width: 100%;
+    background-image: url("https://cdn10.bigcommerce.com/s-9qugz4w/products/25963/images/32614/RMK11785RL__12091.1654081825.1280.1280.jpg?c=2");
+  }
+
+  .OrderDetail .total {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18.35vw 5.75vw 5.25vw;
+    padding: 1vmin 0;
+    color: var(--text-light);
+    border-top: .1vmin solid var(--tan-3);
+  }
+  
+  .OrderDetail .total span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    color: white;
+  }
+  
+  .OrderDetail .total span.right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .OrderDetail .hungry {
+    position: absolute;
+    top: 50vh;
+    font-size: 2vmin;
+  }

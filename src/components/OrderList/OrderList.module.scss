@@ -1,0 +1,18 @@
+.OrderList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(34,45,65);
+    border: .1vmin solid rgb(101, 192, 253);
+    border-radius: 2vmin;
+    margin: 3vmin 0;
+    padding: 3vmin;
+    overflow-y: auto;
+    }
+    
+    .OrderList .noOrders {
+    color: var(--text-light);
+    font-size: 2vmin;
+    position: absolute;
+    top: calc(50vh);
+    }

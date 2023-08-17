@@ -1,0 +1,14 @@
+.formContainer {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0, 0.5);
+    border-radius: 8px;
+    font-family: 'Notable', sans-serif;
+}
+
+.button {
+    background-color: red;
+}

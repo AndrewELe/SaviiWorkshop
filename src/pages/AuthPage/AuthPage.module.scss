@@ -1,0 +1,33 @@
+.AuthPage {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ef203224-5136-4f0c-a0e1-2b169e80ac40/d4yldx2-517b0d88-9582-4801-a0ea-1ae68343859a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VmMjAzMjI0LTUxMzYtNGYwYy1hMGUxLTJiMTY5ZTgwYWM0MFwvZDR5bGR4Mi01MTdiMGQ4OC05NTgyLTQ4MDEtYTBlYS0xYWU2ODM0Mzg1OWEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.nOLFurIIkVU2GBxkcYzzWSGKBmf3GoHQXHiF4frzD30");
+    background-size: 100% auto;
+    background-repeat: repeat;
+    background-color: beige;
+  }
+
+  .AuthPage h3:hover{
+    background: rgba(66, 66, 144,);
+    box-shadow: inset 0 0 3px 3px;
+  }
+
+  .AuthPage h3 {
+    height: 100%;
+    padding: .5rem;
+    margin-top: 4vmin;
+    text-align: center;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.5);
+    color: red;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Notable', sans-serif;
+  }
+
+  .AuthPage h1 {
+    font-size: 5vh;
+    font-family: 'Notable', sans-serif;
+  }
