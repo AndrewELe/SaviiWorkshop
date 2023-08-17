@@ -18,6 +18,8 @@ const Item = require('../models/item');
 
 	await Item.deleteMany({});
 	const items = await Item.create([
+		{ name: "Old Republic's Diatium Power Cell", emoji: '🔋', category: categories[0], price: 5.95 },
+
 		{ name: 'Hamburger', emoji: '🍔', category: categories[0], price: 5.95 },
 		{
 			name: 'Turkey Sandwich',
