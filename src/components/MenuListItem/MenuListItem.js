@@ -9,7 +9,7 @@ export default function MenuListItem({ menuItem, handleAddToOrder }) {
 			<div className={styles.name}>{menuItem.name}</div>
 {/* style image in menulistitem.module */}
 			<img src={menuItem.imageURL} width= "75" height = "75"/>
-       			<button className='description' onClick={() => window.alert(menuItem.description)} >
+       			<button className='btn-sm' onClick={() => window.alert(menuItem.description)} >
          			CLICK FOR DESCRIPTION 
        			</button>
 			<div className={styles.buy}>
