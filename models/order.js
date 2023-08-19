@@ -80,7 +80,7 @@ orderSchema.methods.setItemQty = function (itemId, newQty) {
 	);
 	if (lineItem && newQty <= 0) {
 		// Calling remove, removes itself from the cart.lineItems array
-		lineItem.remove();
+		lineItem.deleteOne();
 	} else if (lineItem) {
 		// Set the new qty - positive value is assured thanks to prev if
 		lineItem.qty = newQty;

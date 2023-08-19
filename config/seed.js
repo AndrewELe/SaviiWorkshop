@@ -18,50 +18,32 @@ const Item = require('../models/item');
 
 	await Item.deleteMany({});
 	const items = await Item.create([
-		{ name: "Old Republic's Diatium Power Cell", emoji: '🔋', category: categories[0], price: 5.95 },
-
-		{ name: 'Hamburger', emoji: '🍔', category: categories[0], price: 5.95 },
-		{
-			name: 'Turkey Sandwich',
-			emoji: '🥪',
-			category: categories[0],
-			price: 6.95
-		},
-		{ name: 'Hot Dog', emoji: '🌭', category: categories[0], price: 3.95 },
-		{ name: 'Crab Plate', emoji: '🦀', category: categories[1], price: 14.95 },
-		{
-			name: 'Fried Shrimp',
-			emoji: '🍤',
-			category: categories[1],
-			price: 13.95
-		},
-		{
-			name: 'Whole Lobster',
-			emoji: '🦞',
-			category: categories[1],
-			price: 25.95
-		},
-		{ name: 'Taco', emoji: '🌮', category: categories[2], price: 1.95 },
-		{ name: 'Burrito', emoji: '🌯', category: categories[2], price: 4.95 },
-		{ name: 'Pizza Slice', emoji: '🍕', category: categories[3], price: 3.95 },
-		{ name: 'Spaghetti', emoji: '🍝', category: categories[3], price: 7.95 },
-		{ name: 'Garlic Bread', emoji: '🍞', category: categories[3], price: 1.95 },
-		{ name: 'French Fries', emoji: '🍟', category: categories[4], price: 2.95 },
-		{ name: 'Green Salad', emoji: '🥗', category: categories[4], price: 3.95 },
-		{ name: 'Ice Cream', emoji: '🍨', category: categories[5], price: 1.95 },
-		{ name: 'Cup Cake', emoji: '🧁', category: categories[5], price: 0.95 },
-		{ name: 'Custard', emoji: '🍮', category: categories[5], price: 2.95 },
-		{
-			name: 'Strawberry Shortcake',
-			emoji: '🍰',
-			category: categories[5],
-			price: 3.95
-		},
-		{ name: 'Milk', emoji: '🥛', category: categories[6], price: 0.95 },
-		{ name: 'Coffee', emoji: '☕', category: categories[6], price: 0.95 },
-		{ name: 'Mai Tai', emoji: '🍹', category: categories[6], price: 8.95 },
-		{ name: 'Beer', emoji: '🍺', category: categories[6], price: 3.95 },
-		{ name: 'Wine', emoji: '🍷', category: categories[6], price: 7.95 }
+		// category[0]
+		//change path of image url to actual path in img folder
+		{ name: "Old Republic's Diatium Power Cell", imageURL: '/img/randTest' , description: 'from the old republic', category: categories[0], price: 5.95 },
+		{ name: 'Unbalanced Diatium Power Cell', description: 'unknown origin', category: categories[0], price: 5.95 },
+		{ name: 'Temple Diatium Power Cell',description: 'From the Jedi Temple',category: categories[0], price: 6.95 },
+		{ name: 'Broken Diatium Power Cell', description: 'broken', category: categories[0], price: 0.95 },
+		// category[1]
+		{ name: 'Focusing crystal', description: 'intact and functional', category: categories[1], price: 14.95 },
+		{ name: 'Dual bladed focusing crystal', description: 'for double bladed sabers', category: categories[1], price: 19.95 },
+		{ name: '4th sister inquisitor focusing crystal', description: 'enables rotation of the blades', category: categories[1], price: 24.95 },
+		// category[2]
+		{ name: 'Classic box on switch', description: 'Supposedly designed from the skywalker family', category: categories[2], price: 1.95 },
+		{ name: 'Deadmans switch', description: 'turns off open hand release', category: categories[2], price: 4.95 },
+		{ name: 'Chromium small on switch', description: 'A clean classic design', category: categories[2], price: 3.95 },
+		// category[3]
+		{ name: 'Overcharged magnetic energizer', description: 'May cause crackling of blade', category: categories[3], price: 7.95 },
+		{ name: 'Balanced cyclic energizer', description: 'Allows for constant blade', category: categories[3], price: 1.95 },
+		// category[4]
+		{ name: 'Single blade with crossgaurd', description: 'Salvaged from an ancient design', category: categories[4], price: 2.95 },
+		{ name: 'High gaurd emitter', description: 'Replicated from a survivor of the clone wars', category: categories[4], price: 3.95 },
+		// category[5]
+		{ name: 'Dothamirian coating', description: 'Dark matte coating, warm to the touch', category: categories[5], price: 1.95 },
+		{ name: 'DuraSteel coating', description: 'A product of Mandolorian engineering', category: categories[5], price: 0.95 },
+		// category[6]
+		{ name: 'Book: build your first saber', description: 'A guide book, a bit tattered and heavily used', category: categories[6], price: 0.95 },
+		{ name: 'Fuzzy tonton', description: 'A delightful drink, numbs the mouth. Origins from planet Batuu, Black Spire outpost', category: categories[6], price: 0.95 },
 	]);
 
 	console.log(items);

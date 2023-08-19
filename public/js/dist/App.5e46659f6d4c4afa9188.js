@@ -237,16 +237,45 @@ function MenuListItem(_ref) {
   return /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].MenuListItem
   }, /*#__PURE__*/React.createElement("div", {
-    className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].emoji + ' ' + 'flex-ctr-ctr'
-  }, menuItem.emoji), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].name
-  }, menuItem.name), /*#__PURE__*/React.createElement("div", {
+  }, menuItem.name), /*#__PURE__*/React.createElement("img", {
+    src: menuItem.imageURL,
+    width: "75",
+    height: "75"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].description
+  }, /*#__PURE__*/React.createElement("button", {
+    className: "description",
+    onClick: () => window.alert(menuItem.description)
+  }, "CLICK FOR DESCRIPTION")), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].buy
   }, /*#__PURE__*/React.createElement("span", null, "$", menuItem.price.toFixed(2)), /*#__PURE__*/React.createElement("button", {
     className: "btn-sm",
     onClick: () => handleAddToOrder(menuItem._id)
   }, "ADD")));
 }
+
+// import styles from './MenuListItem.module.scss';
+
+// export default function MenuListItem({ menuItem, handleAddToOrder }) {
+//   return (
+//     <div className={styles.MenuListItem}>
+//       {/* <div className={styles.imageURL + ' ' + 'flex-ctr-ctr'}>{menuItem.imageURL}</div> */}
+//     <img src={menuItem.imageURL} width= "75" height = "75"/>
+//     <div className={styles.name}>{menuItem.name}</div>
+//     <div className={styles.description}>
+//       <button className='description' onClick={() => window.alert(menuItem.description)} >
+//         CLICK FOR DESCRIPTION 
+//       </button>
+//     </div>
+//       <div className={styles.buy}>
+//         <span>${menuItem.price.toFixed(2)}</span>
+//         <button className="btn-sm" onClick={() => handleAddToOrder(menuItem._id)}>
+//           ADD
+//         </button>
+//       </div>
+//     </div>
+//   );
 
 /***/ }),
 
@@ -2741,4 +2770,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.8cdd9a81dff4bc9c062ee0a48c66251c.js.map
+//# sourceMappingURL=App.9b197f6d202d835dcbabdd5b832bea83.js.map
