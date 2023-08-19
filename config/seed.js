@@ -20,13 +20,13 @@ const Item = require('../models/item');
 	const items = await Item.create([
 		// category[0]
 		//change path of image url to actual path in img folder
-		{ name: "Old Republic's Diatium Power Cell", imageURL: '/img/randTest' , description: 'from the old republic', category: categories[0], price: 5.95 },
-		{ name: 'Unbalanced Diatium Power Cell', description: 'unknown origin', category: categories[0], price: 5.95 },
-		{ name: 'Temple Diatium Power Cell',description: 'From the Jedi Temple',category: categories[0], price: 6.95 },
-		{ name: 'Broken Diatium Power Cell', description: 'broken', category: categories[0], price: 0.95 },
+		{ name: "Old Republic's Diatium Power Cell", imageURL: '/img/il_794xN.1156119802_nqsd.webp' , description: 'from the old republic', category: categories[0], price: 5.95 },
+		{ name: 'Unbalanced Diatium Power Cell', imageURL: "/img/diatiumpowercellpack.915.jpg" ,description: 'unknown origin', category: categories[0], price: 5.95 },
+		{ name: 'Temple Diatium Power Cell', imageURL: "/img/diatiumpowercellpack.927.jpg", description: 'From the Jedi Temple',category: categories[0], price: 6.95 },
+		{ name: 'Broken Diatium Power Cell', imageURL: "img/Diatium_Power_Cell.webp", description: 'broken', category: categories[0], price: 0.95 },
 		// category[1]
-		{ name: 'Focusing crystal', description: 'intact and functional', category: categories[1], price: 14.95 },
-		{ name: 'Dual bladed focusing crystal', description: 'for double bladed sabers', category: categories[1], price: 19.95 },
+		{ name: 'Focusing crystal', imageURL: "/img/il_1140xN.4308935404_43vu.webp" , description: 'intact and functional', category: categories[1], price: 14.95 },
+		{ name: 'Dual bladed focusing crystal', imageURL: "/img/Diatium_Power_Cell.webp" ,description: 'for double bladed sabers', category: categories[1], price: 19.95 },
 		{ name: '4th sister inquisitor focusing crystal', description: 'enables rotation of the blades', category: categories[1], price: 24.95 },
 		// category[2]
 		{ name: 'Classic box on switch', description: 'Supposedly designed from the skywalker family', category: categories[2], price: 1.95 },
